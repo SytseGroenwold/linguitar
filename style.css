@@ -151,6 +151,29 @@ button:disabled {
     color: #718096;
 }
 
+.disclaimer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.disclaimer small {
+    color: #a0aec0;
+    font-style: italic;
+}
+
+.disclaimer a {
+    color: #a67c3a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.disclaimer a:hover {
+    color: #8b5a2b;
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 1.5rem;
