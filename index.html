@@ -12,7 +12,7 @@
             <h1>Questions against distractions</h1>
             <div class="controls">
                 <label for="interval">Cycle Interval (seconds):</label>
-                <input type="number" id="interval" min="1" max="60" value="5">
+                <input type="number" id="interval" min="1" max="60" value="8">
                 <button id="startBtn">Start (Spacebar)</button>
                 <button id="stopBtn" disabled>Stop</button>
             </div>
@@ -22,6 +22,14 @@
             <p id="currentSentence">Press spacebar or click Start to begin cycling through sentences</p>
         </div>
         
+        <div class="rating-controls">
+            <div id="ratingButtons" class="rating-buttons">
+                <button data-rating="good" class="rating-btn good">🟢 Good (Q)</button>
+                <button data-rating="okay" class="rating-btn okay">🟡 Review (W)</button>
+                <button data-rating="bad" class="rating-btn bad">🔴 Bad (E)</button>
+            </div>
+        </div>
+
         <div class="progress-bar">
             <div id="progress" class="progress-fill"></div>
         </div>

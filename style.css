@@ -117,6 +117,53 @@ button:disabled {
     justify-content: center;
 }
 
+.rating-controls {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.rating-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f7fafc;
+    color: #4a5568;
+}
+
+.rating-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rating-btn.good.active {
+    background: #c6f6d5;
+    border-color: #48bb78;
+    color: #22543d;
+}
+
+.rating-btn.okay.active {
+    background: #fefcbf;
+    border-color: #ed8936;
+    color: #744210;
+}
+
+.rating-btn.bad.active {
+    background: #fed7d7;
+    border-color: #f56565;
+    color: #742a2a;
+}
+
 #currentSentence {
     font-size: 1.5rem;
     line-height: 1.6;
